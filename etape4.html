@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Colored design - Étape 4</title>
+
+    <style>
+
+        body {
+            margin: 10px 0;
+            padding: 0;
+            /* text-align center à cause d'Internet Explorer (les anciennes versions d'IE) */
+            text-align: center;
+            font: 0.8em 'Trebuchet MS', Helvetica, sans-serif; /* ceci est la version raccourcie des deux lignes suivantes */
+            /* font-size: 0.8em;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif; */
+            background-color: #dea;
+
+        }
+
+        #conteneur {
+            text-align: left;
+            /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION à donner une largeur (c'est une marge automatique) */
+            margin: 0 auto;
+            width: 770px;
+            border: 2px solid #ab4;
+            background-color: #fff;
+        }
+
+        header h1 {
+            /* hauteur du h1 dans le header */
+            height: 258px;
+            /* top ou bottom pour l'image dans le h1 */
+            background: url(img/apple.jpg) no-repeat left top;
+            /* background-image: url(img/apple.jpg);
+            background-repeat: no-repeat;
+            background-position: left bottom; */
+        }
+
+        /* h1#header a acienne manière d'écrire */
+        header h1 a {
+            /* l'image en arrière-plan du h1 */
+            width: 400px;
+            height: 70px;
+            display: block;
+            /* dès l'instant où on change d'inline en block il est préférable de mettre des tailles largeur et/ou hauteur à l'élément */
+            background: url(img/title.gif) no-repeat right;
+            position: relative;
+            left: 350px;
+            top: 15px;
+            /* pour masquer le texte */
+            text-indent: -5000px;
+        }
+
+        ul#menu {
+            height: 35px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background: url(img/bg_menu.gif) repeat-x 0 -25px;
+        }
+
+        ul#menu li {
+            text-align: center;
+            float: left;
+        }
+
+        ul#menu li a {
+            width: 130px;
+            display: block;
+            border-right: 2px solid #dea;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 25px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        ul#menu li a:hover {
+            background: url(img/bg_menu.gif) repeat-x 0 0;
+        }
+
+        main {
+            /* padding pour main afin de caler les contenus et de laisser la place à l'image en arrière-plan */
+            padding: 0 30px 0 100px;
+            background: url(img/bg_page.gif) no-repeat left top;
+        }
+
+        main h2 {
+            padding-left: 25px;
+            /* width: max-content; */
+            background: url(img/little_apple.gif) no-repeat left bottom;
+            border-bottom: 1px solid #9b2;
+            font-size: 1.4em;
+            line-height: 25px;
+            color: #9b2;
+        }
+
+        main h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            /* width: max-content; */
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color: #9b2;
+        }
+
+        main p {
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        main a {
+            color: #8a0;
+        }
+
+        main a:hover {
+            color: #9b2;
+        }
+
+        main a:visited {
+            color: #ab4;
+        }
+
+        footer p {
+            margin: 0;
+            padding-right: 30px;
+            color: #8a0;
+            line-height: 30px;
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- cette division contient l'ensemble de la page, on peut parfois l'appeler "wrapper", "contenu" ou "div id=main" etc -->
+    <div id="conteneur">
+        <!-- en-tête de la page, de body -->
+        <header>
+            <!-- titre de la page -->
+            <h1><a href="#" title="Colored design - Accueil">Colored Design</a></h1>
+
+            <!-- nav>ul>li*5>a[title]{Étape n° $} -->
+            <nav>
+                <!-- on rajoute id="menu" à notre ul qui sert à la navigation -->
+                <ul id="menu">
+                    <li><a href="etape1.html" title="Colored design n°1">Étape n°1</a></li>
+                    <li><a href="etape2.html" title="Colored design n°2">Étape n°2</a></li>
+                    <li><a href="etape3.html" title="Colored design n°3">Étape n°3</a></li>
+                    <li><a href="etape4.html" title="Colored design n°4">Étape n°4</a></li>
+                    <li><a href="etape5.html" title="Colored design n°5">Étape n°5</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- contenu principal -->
+        <main>
+            <h2>Un titre - Étape 4</h2>
+
+            <p>Occaecat aliquip consectetur esse magna labore commodo amet in nostrud velit cupidatat pariatur fugiatin.
+                Magna ut ea reprehenderit labore veniam in aute elit nisi duis dolor. Minim occaecat esse ipsum
+                adipisicing velit irure culpa duis dolore pariatur laboris. Adipisicing deserunt amet aliqua docupidatat
+                sint velit ipsum qui proident est dolor. Voluptate non labore nisi quis laborum aliqua laboris et
+                ullamco in.</p>
+
+            <p>Aliqua anim exercitation enim excepteur. Nisi Lorem quis dolor ex anim elit consequat ut. Adipisicing
+                cupidatat excepteur occaecat dolor magna enim sint elit commodo labore velit ipsum duis eiusmod.
+                Consequat laboris reprehenderit ex aliquip ut nostrud proident. Aliqua minim fugiat minim excepteur est.
+                Amet excepteur nostrud dolore aute ipsum aliquip non. <a href="#" title="Lien">Irure sit reprehenderit
+                    esse elit cillum.</a></p>
+
+            <p>Laboris amet duis qui aliquip laboris. In cillum irure enim culpa duis. Ea voluptate cillum velit aliqua
+                veniam tempor. Tempor ex proident non dolore adipisicing id. Occaecat esse velit eiusmod sit irure sit
+                anim ex in eu. Duis reprehenderit eu occaecat exercitation Lorem laborum.</p>
+
+            <p>Anim nulla ut cillum ex occaecat qui aliquip dolor consequat. Et ut tempor ullamco minim qui anim nulla
+                ut ea id duis sit pariatur exercitation. Elit consectetur proident irure deserunt.</p>
+
+            <p>Ea ex in non labore enim aliquip laborum in. Nulla Lorem mollit laboris irure velit aliqua duis quis id
+                ex. Sunt dolor proident eu laboris voluptate cupidatat nisi labore consequat aute duis in aliquip
+                officia. Aute in exercitation ad et. Excepteur ullamco dolor irure est est velit quis in duis. Commodo
+                mollit amet culpa amet ad.</p>
+
+            <p>Qui consequat enim aliquip aute dolore proident laborum magna et dolore eu elit. In est nostrud aute
+                veniam duis esse voluptate ex cupidatat pariatur voluptate sunt ipsum. Velit quis excepteur duis do
+                adipisicing excepteur ipsum ullamco do sit anim irure voluptate.</p>
+
+            <p>Sint adipisicing ex exercitation ad. Quis aute consectetur est eu voluptate eiusmod esse cillum enim
+                tempor labore non consequat aliqua. Enim eiusmod qui nisi eu amet id et fugiat nisi. Duis tempor quis
+                aliquip adipisicing laborum esse. Et ipsum fugiat quis esse veniam eu ea id duis voluptate ipsum magna
+                nulla. Incididunt et sit laborum cupidatat do minim reprehenderit est quis aliquip nulla duis proident.
+            </p>
+
+            <h3>Un sous-titre - Étape 4</h3>
+
+            <p>Excepteur duis est eu ex laborum voluptate eu anim nulla eu ullamco dolor est. Culpa deserunt nostrud
+                mollit amet nulla aute. Nostrud excepteur voluptate incididunt consequat qui nisi deserunt ipsum duis eu
+                Lorem reprehenderit tempor amet. Lorem dolore ex nulla pariatur est adipisicing reprehenderit tempor
+                eiusmod est. Veniam labore est minim sunt.</p>
+
+            <p>Irure exercitation sint mollit dolor culpa occaecat mollit laborum enim occaecat id adipisicing nisi.
+                Mollit et est laboris occaecat labore tempor. Magna exercitation laborum minim eiusmod ad officia minim
+                nulla nisi sit irure laboris fugiat.</p>
+
+            <p>Commodo sunt exercitation magna quis eiusmod exercitation commodo sit irure voluptate fugiat. Ut dolor
+                pariatur sit reprehenderit minim excepteur ad eu dolor nostrud amet cupidatat eiusmod ut. Consequat sunt
+                qui excepteur in Lorem dolor labore enim est voluptate. Elit irure deserunt exercitation voluptate Lorem
+                consequat amet ad eu.</p>
+
+            <p>Irure veniam labore ullamco adipisicing est Lorem aliqua dolor ex duis. Excepteur magna Lorem eiusmod
+                dolore elit occaecat ex sint commodo ad qui non nostrud. In et voluptate esse nostrud ipsum laborum
+                magna exercitation sit quis aliquip ex. Excepteur do labore non et pariatur eiusmod officia dolore amet
+                velit Lorem ea.</p>
+        </main>
+
+        <!-- pied de page -->
+        <footer>
+            <p>Réalisation des codes HTML/CSS, du tutoriel et du design par LePoles</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
