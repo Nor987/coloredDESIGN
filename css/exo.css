@@ -1,11 +1,11 @@
         body {
             margin: 10px 0;
             padding: 0;
+            background-color: #dea;
             /* text-align center à cause d'Internet Explorer (les anciennes versions d'IE) */
             text-align: center;
-            font: 0.8em 'PT Sans', sans-serif;
+            font: 0.8em 'Open Sans', sans-serif;
             /* font: 0.8em 'Trebuchet MS', Helvetica, sans-serif; */ /* ceci est la version raccourcie des deux lignes suivantes */
-            background-color: #dea;
         }
 
         #conteneur {
@@ -26,7 +26,7 @@
 
         /* h1#header a acienne manière d'écrire */
         header h1 a {
-            /* on donne des dimensions aux liens, chose possible grâce à la propriété display:block qui transforme le lien en élément de type block auquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
+            /* on donne des dimensions aux liens, chose possible grâce à la propriété display:block qui transforme le lien en élément de type blocknauquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
             width: 400px;
             height: 70px;
             display: block;
@@ -44,8 +44,8 @@
             margin: 0;
             padding: 0;
             /* on met l'image de fond avec un décalage de 25px vers le haut */
-            list-style-type: none;
             background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+            list-style-type: none;
         }
 
         ul#menu li {
@@ -59,8 +59,9 @@
             /* grâce à la propriété display:block; on peut dimensionner les a */
             display: block;
             border-right: 2px solid #dea;
-            font-size: 1.2em;
-            font-weight: bold;
+            font-family: 'Ibarra Real Nova', serif;
+            font-size: 1.1em;
+            font-weight: 700;
             text-decoration: none;
             line-height: 25px;
             color: #fff;
@@ -71,6 +72,10 @@
         ul#menu li a:hover {
             /* on décale l'image de fond au passage/survol de la souris, ce qui fait une "animation"  */
             background: url(../img/bg_menu.gif) repeat-x 0 0;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-family: 'Ibarra Real Nova', serif;
         }
 
         main {
@@ -86,7 +91,7 @@
             width: max-content;
             background: url(../img/little_apple.gif) no-repeat left bottom;
             border-bottom: 1px solid #9b2;
-            font-size: 1.4em;
+            font-size: 1.3em;
             line-height: 25px;
             color: #9b2;
         }
